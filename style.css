@@ -22,15 +22,11 @@ header {
 
 .hero /*, footer*/ {
     background-color: #1F2937;
+    color: #F9FAF8;
 }
 
 #header-logo-text {
     font-size: 24px;
-}
-
-#header-logo-text,
-#hero-main-text {
-    color: #F9FAF8;
 }
 
 header ul {
@@ -70,4 +66,13 @@ header li a {
 .hero img {
     width: 700px;
     height: 300px;
+}
+
+.sign-up-button /*.call-to-action*/ {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: 700;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 5px;
 }
