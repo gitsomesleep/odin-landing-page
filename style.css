@@ -18,6 +18,7 @@ header {
     justify-content: space-between;
     white-space: nowrap;
     padding-bottom: 60px;
+    align-items: baseline;
 }
 
 /* Page padding for all sections in the body */
