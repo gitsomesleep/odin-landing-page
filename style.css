@@ -20,10 +20,16 @@ header {
     padding-bottom: 60px;
 }
 
-/* Page padding */
-.hero /*, all the other sections*/ {
+/* Page padding for all sections in the body */
+.hero,
+.info-section /*, all the other sections*/ {
     padding: 0 10%;
     display: flex;
+}
+
+/* The hero and info sections have headers or titles and need a flex-direction of column for proper layout */
+.hero,
+.info-section {
     flex-direction: column;
 }
 
@@ -76,14 +82,52 @@ header li a {
     min-width: 50%;
     /* min-height: 100px; */
     aspect-ratio: 5 / 2;
-    object-fit: cover;
+    object-fit: cover; /* This crops the image into my allotted aspect ratio rather than shrinking it to fit */
 }
 
-.sign-up-button /*.call-to-action*/ {
+.sign-up-button /* , .call-to-action*/ {
     background-color: #3882F6;
     color: #F9FAF8;
     font-weight: 700;
     border: none;
     padding: 5px 25px;
     border-radius: 5px;
+}
+
+.info-section {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.info-section-header {
+    padding-bottom: 20px;
+}
+
+.info-section-items {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 88px;
+    gap: 40px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: stretch; */
+    align-items: stretch;
+}
+
+.info-item img {
+    /* Currently an arbitrary height so it can shrink too much*/
+    min-width: 115px;
+    min-height: 115px;
+    max-width: 100%;
+    aspect-ratio: 1;
+    border: #3882F6 solid;
+    border-radius: 10%;
+}
+
+.info-item p {
+    text-align: center;
 }
