@@ -97,8 +97,8 @@ header li a {
 
 .info-section {
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 80px;
 }
 
 .info-section-header {
@@ -115,7 +115,6 @@ header li a {
 .info-item {
     display: flex;
     flex-direction: column;
-    /* justify-content: stretch; */
     align-items: stretch;
 }
 
@@ -132,3 +131,36 @@ header li a {
 .info-item p {
     text-align: center;
 }
+
+.info-section-header {
+    font-weight: 900;
+}
+
+.info-section-header, blockquote p {
+    font-size: 36px;
+    color:#1F2937; /* Match text color with hero background color */
+}
+
+blockquote p {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote-section {
+    padding: 80px 20%;
+    background-color: #e5e7eb;
+    text-align: center;
+}
+
+blockquote p::before {
+    content: "\201C";
+  }
+  
+  blockquote p::after {
+    content: "\201D";
+  }
+  
+  blockquote + p {
+    text-align: right;
+    font-weight: 700;
+  }
