@@ -35,7 +35,7 @@ header {
     flex-direction: column;
 }
 
-.hero /*, footer*/ {
+.hero, footer {
     background-color: #1F2937; /* Match with text color on white background sections */
     color: #F9FAF8;
 }
@@ -191,3 +191,10 @@ blockquote p::before {
 .action-container .sign-up-button {
     border: #F9FAF8 solid 3px; /* Match action-container text color */
 }
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+  }
