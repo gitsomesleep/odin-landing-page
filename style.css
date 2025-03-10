@@ -89,9 +89,9 @@ header li a {
 
 
 /*
-Sign-Up buttons and the Action Container (within the Action Section) have some matching styles.
+Buttons and the Action Container (within the Action Section) have some matching styles.
 */
-.sign-up-button,
+button,
 .action-container {
     background-color: #3882F6;
     color: #F9FAF8; /* Match to button border-color in action-container */
@@ -216,8 +216,8 @@ blockquote + p {
     font-size: 16px;
 }
 
-/* This particular sign-up button needs a border */
-.action-container .sign-up-button {
+/* This particular button needs a border */
+.action-container button {
     border: #F9FAF8 solid 3px; /* Match action-container text color */
 }
 
