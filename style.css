@@ -170,7 +170,7 @@ blockquote p {
 
 /* Some blockquote p styles are combined with .info-section-header previously to keep them matching */
 blockquote p {
-    font-weight: lighter;
+    font-weight: 200;
     font-style: italic;
 }
 
